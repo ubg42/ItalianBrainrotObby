@@ -168,6 +168,11 @@
 		}
 	  
       document.body.appendChild(script);
+
+		fetch("./config.json")
+  .then(r => r.json())
+  .then(cfg => console.warn(cfg.message));
+
     </script>
   
 <script>console.log('%c' + 'PluginYG2 v2.0031  build: 26', 'color: #FFDF73; background-color: #454545');</script>
